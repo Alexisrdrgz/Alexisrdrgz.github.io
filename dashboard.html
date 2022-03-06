@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    
+    
+    <div class="uk-navbar-container " uk-navbar >
+        <a href="#offcanvas-slide" class="uk-navbar-toggle" uk-toggle uk-navbar-toggle-icon href=""></a>
+        <div class="uk-navbar-left">
+            <nav class="uk-navbar-container" uk-navbar> <!-- navbar-->
+                <a class="uk-navbar-item uk-logo" href="./dashboard.html"
+              ><img 
+                src="./imagenes/dsds.png"
+                style="height: 200px; width: 350px;margin-top: 50px;";
+            /></a>
+        </div>
+    </div>
+   
+
+    <div id="offcanvas-slide" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+    
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header"><a href="#pedidos1">Pedidos</a></li>
+                <li class="uk-nav-divider"></li>
+                <li class="uk-nav-header"><a href="#sabores">Sabores</a></li>
+                <li class="uk-nav-divider"></li>
+                <li class="uk-nav-header"><a href="#adornos">Adornos</a></li>
+                
+            </ul>
+    
+        </div>
+    </div>
+    <div class="uk-alert-danger" uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+        <div class="contenedor">
+        <div class="alertaPedidos"><p align="center"><a href="#pedidos1">Tienes 5 pedidos pendientes</a></p></div>
+        <div class="alertaSabores"><p align="center"><a href="#sabores">Tienes Sabores agotados</a></p></div>
+        <div class="alertaAdornos"><p align="center"><a href="#adornos">Tienes Adornos agotados</a></p></div>
+    </div>
+    </div>
+
+    <hr class="dashboard">
+    <div class="uk-margin uk-text-center" id="pedidos">
+        <h3 id="pedidos1"
+          class="uk-heading-primary"
+          style="
+            background: -webkit-linear-gradient(
+              rgb(235, 235, 235),
+              rgb(3, 3, 3)
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent; font-size: 50px;
+          "
+        >
+          Pedidos
+        </h3>
+      </div>
+
+    <table class="uk-table uk-table-middle uk-table-divider" >
+        <thead>
+            <tr class="menud">
+                <th class="uk-width-small">Nombre Completo</th>
+                <th>Descripcion</th>
+                <th>Correo electronico</th>
+                <th>Telefono</th>
+                <th>precio</th>
+                <th>Sabores</th>
+                <th>Adornos</th>
+                <th>estatus</th>
+
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan estrada</td>
+                <td>Quisiera ordenar un pastel de chocolate con fruta de temporada.</td>
+                <td>  juan3@gmail.com  </td>
+                <td>  999999999  </td>
+                <td>$440    </td>
+                <td>  Chocolate  </td>
+                <td>  fruta de temporada  </td>
+
+
+                <td><div class="uk-button-group">
+                    <button class="uk-button uk-button-default">Seleccionar</button>
+                    <div class="uk-inline">
+                        <button class="uk-button uk-button-default" type="button"><span uk-icon="icon:  triangle-down"></span></button>
+                        <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header"><a href="#">Despachado</a></li>
+                                <li class="uk-nav-header"><a href="#">Pendiente</a></li>
+                                <li class="uk-nav-header"><a href="#">Cancelado</a></li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Juan Rulfo</td>
+                <td>Me gustaria ordenar un pastel de zanahoria con fruta de temporada.</td>
+                <td> juanr@gmail.com   </td>
+                <td> 6624856493   </td>
+                <td> $380   </td>
+                <td>  Zanahoria  </td>
+                <td> fruta de temporada   </td>
+
+                <td><div class="uk-button-group">
+                    <button class="uk-button uk-button-default">Seleccionar</button>
+                    <div class="uk-inline">
+                        <button class="uk-button uk-button-default" type="button"><span uk-icon="icon:  triangle-down"></span></button>
+                        <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header"><a href="#">Despachado</a></li>
+                                <li class="uk-nav-header"><a href="#">Pendiente</a></li>
+                                <li class="uk-nav-header"><a href="#">Cancelado</a></li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Pedrito zola</td>
+                <td>Me gustaria ordenar un pastel de Vainilla con adornos de frutos rojos y fondant</td>
+                <td> patstelito123@gmail.com   </td>
+                <td> 6625584564 </td>
+                <td>  $250  </td>
+                <td>  Vainilla, chocolate  </td>
+                <td> fondant, frutos rojos   </td>
+               
+
+                <td><div class="uk-button-group">
+                    <button class="uk-button uk-button-default">Seleccionar</button>
+                    <div class="uk-inline">
+                        <button class="uk-button uk-button-default" type="button"><span uk-icon="icon:  triangle-down"></span></button>
+                        <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-nav-header"><a href="#">Despachado</a></li>
+                                <li class="uk-nav-header"><a href="#">Pendiente</a></li>
+                                <li class="uk-nav-header"><a href="#">Cancelado</a></li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                </td>
+            </tr>
+           
+        </tbody>
+    </table>
+    <!--Saabores-->
+    <hr class="dashboard">
+    <div class="uk-margin uk-text-center" id="pedidos">
+        <h3  id="sabores"
+          class="uk-heading-primary"
+          style="
+            background: -webkit-linear-gradient(
+              rgb(235, 235, 235),
+              rgb(3, 3, 3)
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent; font-size: 50px;
+          "
+        >
+          Stock de sabores
+        </h3>
+        </div>
+    <table class="uk-table uk-table-middle uk-table-divider uk-card-default" >
+        <thead>
+            <tr>
+            <th>Sabor</th>
+            <th>Stock</th>
+            <th>Ubicacion</th>
+            <th>Accion</th>
+          </tr>
+        </thead>
+        <tbody align="left">
+          <tr>
+            <td>Vainilla</td>
+            <td>15</td>
+            <td>Anaquel 2</td>
+            <td><button class="uk-button uk-button-default">Añadir</button></td>
+          </tr>
+          <tr>
+            <td>Zanahoria</td>
+            <td>0</td>
+            <td>Anaquel 2</td>
+            <td><button class="uk-button uk-button-default">Añadir</button></td>
+          </tr>
+          <tr>
+            <td>Chocolate</td>
+            <td>10</td>
+            <td>Anaquel 3</td>
+            <td><button class="uk-button uk-button-default">Añadir</button></td>
+          </tr>
+        </tbody>
+      </table>
+        <!-- Adornos -->
+
+      <hr class="dashboard"> 
+
+        <div class="uk-margin uk-text-center" id="pedidos">
+            <h3 
+              class="uk-heading-primary"
+              style="
+                background: -webkit-linear-gradient(
+                  rgb(235, 235, 235),
+                  rgb(3, 3, 3)
+                );
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent; font-size: 50px; 
+              "
+              
+            >
+              Stock de adornos
+            </h3>
+        </div>
+      <table class="uk-table uk-table-middle uk-table-divider uk-card-default" id="adornos">
+        <thead>
+          <tr>
+            <th>Sabor</th>
+            <th>Stock</th>
+            <th>Ubicacion</th>
+            <th>Accion</th>
+          </tr>
+        </thead>
+        <tbody align="left">
+         
+          <tr>
+            <td>Fondant</td>
+            <td>30</td>
+            <td>Anaquel 5</td>
+            <td><button class="uk-button uk-button-default">Añadir</button></td>
+          </tr>
+          <tr>
+            <td>Frutos Rojos</td>
+            <td>0</td>
+            <td>Anaquel 4</td>
+            <td><button class="uk-button uk-button-default">Añadir</button></td>
+          </tr>
+          <tr>
+            <td>Fruta de temporada</td>
+            <td>30</td>
+            <td>Anaquel 5</td>
+            <td><button class="uk-button uk-button-default">Añadir</button></td>
+          </tr>
+        </tbody>
+
+</body>
+</html>
